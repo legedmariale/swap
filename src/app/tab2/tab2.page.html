@@ -7,15 +7,12 @@
     </ion-title>
     <ion-icon name="menu"></ion-icon>
   </ion-toolbar>
-<ion-button expand="block" fill="outline" color="primary">
-  <ion-icon name="search"></ion-icon>
-  <ion-label color="primary">What are you looking for?</ion-label>
-</ion-button>
+<ion-searchbar expand="block" show-clear-button="focus" value="What are you looking for"></ion-searchbar>
 </ion-header>
 
 <ion-content>
 
-<ion-card style="height: 100px;" class="welcome-card">
+<ion-card style="height: 150px;" class="welcome-card">
 <ion-title> View more ></ion-title>
   <img  src="/assets/img/pic1.jpeg" alt="" />
 </ion-card>
@@ -26,7 +23,7 @@
 
 <ion-grid>
 <ion-row>
-    <ion-label style="margin-left: 5%; font-weight: bold;">Categories:</ion-label>
+    <ion-label style="margin-left: 5%; font-weight: bold;">Categories</ion-label>
     <ion-label color="secondary" style="margin-left: 50%">View all></ion-label>
 </ion-row>
 
@@ -54,6 +51,11 @@
 
 
 <ion-grid>
+  <ion-row>
+    <ion-label style="margin-left: 5%; font-weight: bold;">Featured</ion-label>
+    
+  </ion-row>
+
   <ion-row>
     <ion-col>
       <ion-card style="height: 200px; width: 140px;" class="welcome-card">

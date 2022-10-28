@@ -2,23 +2,24 @@
   <ion-toolbar style="height: 80px;" color="primary">
     <br>
     <br>
-    <ion-title>
-      Swap
-    </ion-title>
-    <ion-icon name="menu"></ion-icon>
+    <ion-grid>
+        <ion-row>
+                <ion-icon name="menu"></ion-icon>
+                <ion-title>Swap</ion-title>
+          </ion-row>
+    </ion-grid>
+
+    
       
   </ion-toolbar>
-  <ion-button expand="block" fill="outline" color="primary">
-    <ion-icon name="search"></ion-icon>
-    <ion-label color="primary">What are you looking for?</ion-label>
-  </ion-button>
+  <ion-searchbar expand="block" show-clear-button="focus" value="What are you looking for"></ion-searchbar>
 </ion-header>
 
 <ion-content color="secondary">
 <ion-grid>
   <ion-row>
       <ion-card style="height: 100px;">
-        <img src="/assets/img/c1.png" alt="" />
+        <img src="/assets/img/c1.png" [routerLink]="['/product']" alt="" />
       </ion-card>
   </ion-row>
   <ion-row>
@@ -62,4 +63,8 @@
     </ion-card>
   </ion-row>
 </ion-grid>
+
+
+
+
 </ion-content>

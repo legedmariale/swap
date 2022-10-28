@@ -45,6 +45,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'product',
+        children: [
+          {
+            path: '',
+            loadChildren: '../product/product.module#ProductPageModule'
+          }
+        ]
+      },
+      {
         path: 'profile',
         children: [
           {
