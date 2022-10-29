@@ -1,9 +1,128 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>product-details</ion-title>
-  </ion-toolbar>
+  <ion-card>
+    <img src="/assets/img/pictures3.png" [routerLink]="['/hand']" alt="" />
+  </ion-card>
 </ion-header>
+<ion-content style="margin-left: 5%;">
 
-<ion-content>
+<ion-card>  
+<ion-icon color="primary" name="star"></ion-icon>
+<ion-icon color="primary" name="star"></ion-icon>
+<ion-icon color="primary" name="star"></ion-icon>
+<ion-icon color="primary" name="star"></ion-icon>
+<ion-icon color="primary" name="star"></ion-icon>
+<ion-row>
+  <ion-label>Polo Ralph Lauren wind breaker jacket - classic style - light blue</ion-label>
+</ion-row>
+
+<ion-row>
+<ion-col>
+  <ion-label color="danger">9 km</ion-label>
+  
+</ion-col>
+<ion-col>
+  <ion-label>Laura</ion-label>
+  
+</ion-col>
+<ion-col>
+  
+  <img style="height: 50px; width: 50px;" src="/assets/img/p3.png" alt="" />
+</ion-col>
+</ion-row>
+
+
+
+<ion-row>
+  <ion-label>
+    Preferences:
+  </ion-label>
+</ion-row>
+
+<ion-row>
+  <ion-badge style="margin-left:3%;" color="secondary">Jeans</ion-badge>
+  <ion-badge style="margin-left:3%;" color="secondary">Sweaters</ion-badge>
+  <ion-badge style="margin-left:3%;" color="secondary">Coat</ion-badge>
+</ion-row>
+<br>
+<ion-row>
+  <ion-label>
+    Important Information:
+  </ion-label>
+</ion-row>
+<br>
+<ion-row>
+  <ion-label>State of piece: Used</ion-label>
+</ion-row>
+<br>
+<ion-row>
+  <ion-label>Size: L</ion-label>
+</ion-row>
+
+</ion-card>
+
+<ion-card>
+  <br>
+  <ion-label>
+    Light blue jacket by Polo Ralph Lauren. Button neck with spread collar. Zip placket. Embroidered logo to chest and cuff
+    Side pockets/ Elasticated hem.
+    
+    Regular fit. True to size. Model wears: UK S/ EU S/ US
+
+  </ion-label>
+  <br>
+</ion-card>
+
+<ion-card>
+  <br>
+  <ion-label style="font-weight:bold">
+    Reviews
+  </ion-label>
+  <br>
+  <ion-icon color="primary" name="star"></ion-icon>
+  <ion-icon color="primary" name="star"></ion-icon>
+  <ion-icon color="primary" name="star"></ion-icon>
+  <ion-icon color="primary" name="star"></ion-icon>
+  <ion-icon color="primary" name="star"></ion-icon>
+  <ion-row>
+    <ion-label>Leslie Alexander</ion-label>
+  </ion-row>
+
+  <ion-row>
+    <ion-label>Really Cool</ion-label>
+  </ion-row>
+</ion-card>
+
+<br>
+<ion-label style="font-weight:bold; margin-left: 20px;">
+  Related Products
+</ion-label>
+<br>
+<ion-row>
+<img style="height: 150px; margin-left: 5%;" src="/assets/img/pic7.png" alt="" />
+<img style="height: 150px;margin-left: 5%;" src="/assets/img/pic8.png" alt="" />
+</ion-row>
+
+<ion-footer>
+  <ion-card>
+    <ion-row>
+      <ion-col>
+      <ion-icon style="margin-top: 20px;" name="arrow-back"></ion-icon>
+      </ion-col>
+      <ion-col>
+      <ion-button expand="block" color="primary" (click)="presentAlert()">Swap</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-icon style="margin-top: 20px;margin-left: 50%;" name="heart"></ion-icon>
+      </ion-col>
+      
+    </ion-row>
+    
+  
+  </ion-card>
+</ion-footer>
+
+
+
+
 
 </ion-content>

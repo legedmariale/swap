@@ -63,6 +63,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'chat',
+        children: [
+          {
+            path: '',
+            loadChildren: '../chat/chat.module#ChatPageModule'
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
